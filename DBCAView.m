@@ -31,7 +31,7 @@
         UIImage *dogLayerImage = [UIImage imageNamed:@"boxer-dog.jpg"];
         CGImageRef image = [dogLayerImage CGImage];
         [dogLayer setContents:(__bridge id)image];
-        [dogLayer setContentsRect:CGRectMake(-0.1, -0.1, 1.2, 1.2)];
+        [dogLayer setContentsRect:CGRectMake(-0.1, -0.1, 1.1, 1.1)];
         [dogLayer setContentsGravity:kCAGravityResizeAspect];
         
         
@@ -39,16 +39,16 @@
         
         [[self layer] addSublayer:dogLayer];
         
-        // create second layer for the bone image but DON'T Load because we want the image to load when the screen is touched
+        // create second layer for the bone image but DON'T Load the actual image because we want the image to load when the screen is touched
         
         boneLayer = [[CALayer alloc]init];
-        [boneLayer setBounds:CGRectMake(0, 0, 60, 70)];
+        [boneLayer setBounds:CGRectMake(0, 0, 30, 35)];
         [boneLayer setPosition:CGPointMake(0, 0)];
         
         [boneLayer setBackgroundColor:[UIColor clearColor].CGColor];
         [boneLayer setZPosition:5];
         
-        //load bone Layer onto the view
+        //load bone Layer onto the view but dont add the bone yet
         [[self layer]addSublayer:boneLayer];
     }
     return self;
@@ -59,10 +59,14 @@
     UITouch *touch = [touches anyObject];
     CGPoint touchPoint = [touch locationInView:self];
     
+    CGImageRef dogBone = [[UIImage imageNamed:@"bone.png"] CGImage];
+    [boneLayer setContents:(__bridge id) dogBone];
+    [boneLayer setPosition:touchPoint];
+    
     CABasicAnimation *dogMovementAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
     [dogMovementAnimation setFromValue:[NSValue valueWithCGPoint:[[dogLayer presentationLayer] position]]];
     [dogMovementAnimation setToValue:[NSValue valueWithCGPoint:touchPoint]];
-    [dogMovementAnimation setDuration:2.0];
+    [dogMovementAnimation setDuration:1.0];
     
     [dogLayer setPosition:touchPoint];
     
