@@ -15,6 +15,7 @@
 {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]]; //this sets the main screen
     DBCAViewController *dogViewController = [[DBCAViewController alloc]init];
+    self.window.backgroundColor = [UIColor whiteColor];
     [[self window]setRootViewController:dogViewController];
     [[self window] makeKeyAndVisible];
 

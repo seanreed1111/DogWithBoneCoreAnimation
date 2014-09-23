@@ -22,7 +22,7 @@
         
         //create first layer for dog image
         dogLayer = [[CALayer alloc]init];
-        [dogLayer setBounds:CGRectMake(0, 0, 43.0, 85.0)];
+        [dogLayer setBounds:CGRectMake(0, 0, 100, 100)];
         [dogLayer setPosition:CGPointMake(160, 100)];
         [dogLayer setZPosition:0.0];
         [dogLayer setBackgroundColor:[UIColor clearColor].CGColor];
