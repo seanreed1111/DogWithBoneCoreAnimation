@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1440FC7619D1C25700AC89DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FC7519D1C25700AC89DA /* Foundation.framework */; };
+		1440FC7819D1C25700AC89DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FC7719D1C25700AC89DA /* CoreGraphics.framework */; };
+		1440FC7A19D1C25700AC89DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FC7919D1C25700AC89DA /* UIKit.framework */; };
+		1440FC8019D1C25700AC89DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1440FC7E19D1C25700AC89DA /* InfoPlist.strings */; };
+		1440FC8219D1C25700AC89DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FC8119D1C25700AC89DA /* main.m */; };
+		1440FC8619D1C25700AC89DA /* DBCAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FC8519D1C25700AC89DA /* DBCAAppDelegate.m */; };
+		1440FC8C19D1C25700AC89DA /* DBCAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FC8B19D1C25700AC89DA /* DBCAViewController.m */; };
+		1440FC8E19D1C25700AC89DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1440FC8D19D1C25700AC89DA /* Images.xcassets */; };
+		1440FC9519D1C25700AC89DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FC9419D1C25700AC89DA /* XCTest.framework */; };
+		1440FC9619D1C25700AC89DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FC7519D1C25700AC89DA /* Foundation.framework */; };
+		1440FC9719D1C25700AC89DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FC7919D1C25700AC89DA /* UIKit.framework */; };
+		1440FC9F19D1C25700AC89DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1440FC9D19D1C25700AC89DA /* InfoPlist.strings */; };
+		1440FCA119D1C25700AC89DA /* Dog_Chases_Bone_CoreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FCA019D1C25700AC89DA /* Dog_Chases_Bone_CoreAnimationTests.m */; };
+		1440FCAC19D1C42800AC89DA /* DBCAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1440FCAB19D1C42800AC89DA /* DBCAView.m */; };
+		1440FCAE19D1C52400AC89DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1440FCAD19D1C52400AC89DA /* QuartzCore.framework */; };
+		1440FCB119D1C6E600AC89DA /* boxer-dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1440FCAF19D1C6E600AC89DA /* boxer-dog.jpg */; };
+		1440FCB219D1C6E600AC89DA /* bone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1440FCB019D1C6E600AC89DA /* bone.png */; };
+		1440FCB419D1C9D400AC89DA /* Green_Grass_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1440FCB319D1C9D400AC89DA /* Green_Grass_Texture.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1440FC9819D1C25700AC89DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1440FC6A19D1C25700AC89DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1440FC7119D1C25700AC89DA;
+			remoteInfo = "Dog Chases Bone CoreAnimation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1440FC7219D1C25700AC89DA /* Dog Chases Bone CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Chases Bone CoreAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1440FC7519D1C25700AC89DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1440FC7719D1C25700AC89DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1440FC7919D1C25700AC89DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1440FC7D19D1C25700AC89DA /* Dog Chases Bone CoreAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dog Chases Bone CoreAnimation-Info.plist"; sourceTree = "<group>"; };
+		1440FC7F19D1C25700AC89DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1440FC8119D1C25700AC89DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1440FC8319D1C25700AC89DA /* Dog Chases Bone CoreAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dog Chases Bone CoreAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		1440FC8419D1C25700AC89DA /* DBCAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBCAAppDelegate.h; sourceTree = "<group>"; };
+		1440FC8519D1C25700AC89DA /* DBCAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBCAAppDelegate.m; sourceTree = "<group>"; };
+		1440FC8A19D1C25700AC89DA /* DBCAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBCAViewController.h; sourceTree = "<group>"; };
+		1440FC8B19D1C25700AC89DA /* DBCAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBCAViewController.m; sourceTree = "<group>"; };
+		1440FC8D19D1C25700AC89DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1440FC9319D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dog Chases Bone CoreAnimationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1440FC9419D1C25700AC89DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1440FC9C19D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dog Chases Bone CoreAnimationTests-Info.plist"; sourceTree = "<group>"; };
+		1440FC9E19D1C25700AC89DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1440FCA019D1C25700AC89DA /* Dog_Chases_Bone_CoreAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog_Chases_Bone_CoreAnimationTests.m; sourceTree = "<group>"; };
+		1440FCAA19D1C42800AC89DA /* DBCAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBCAView.h; path = ../DBCAView.h; sourceTree = "<group>"; };
+		1440FCAB19D1C42800AC89DA /* DBCAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBCAView.m; path = ../DBCAView.m; sourceTree = "<group>"; };
+		1440FCAD19D1C52400AC89DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1440FCAF19D1C6E600AC89DA /* boxer-dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "boxer-dog.jpg"; sourceTree = "<group>"; };
+		1440FCB019D1C6E600AC89DA /* bone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bone.png; sourceTree = "<group>"; };
+		1440FCB319D1C9D400AC89DA /* Green_Grass_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Green_Grass_Texture.jpg; path = ../Green_Grass_Texture.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1440FC6F19D1C25700AC89DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FCAE19D1C52400AC89DA /* QuartzCore.framework in Frameworks */,
+				1440FC7819D1C25700AC89DA /* CoreGraphics.framework in Frameworks */,
+				1440FC7A19D1C25700AC89DA /* UIKit.framework in Frameworks */,
+				1440FC7619D1C25700AC89DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1440FC9019D1C25700AC89DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FC9519D1C25700AC89DA /* XCTest.framework in Frameworks */,
+				1440FC9719D1C25700AC89DA /* UIKit.framework in Frameworks */,
+				1440FC9619D1C25700AC89DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1440FC6919D1C25700AC89DA = {
+			isa = PBXGroup;
+			children = (
+				1440FC7B19D1C25700AC89DA /* Dog Chases Bone CoreAnimation */,
+				1440FC9A19D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests */,
+				1440FC7419D1C25700AC89DA /* Frameworks */,
+				1440FC7319D1C25700AC89DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1440FC7319D1C25700AC89DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1440FC7219D1C25700AC89DA /* Dog Chases Bone CoreAnimation.app */,
+				1440FC9319D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1440FC7419D1C25700AC89DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1440FCAD19D1C52400AC89DA /* QuartzCore.framework */,
+				1440FC7519D1C25700AC89DA /* Foundation.framework */,
+				1440FC7719D1C25700AC89DA /* CoreGraphics.framework */,
+				1440FC7919D1C25700AC89DA /* UIKit.framework */,
+				1440FC9419D1C25700AC89DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1440FC7B19D1C25700AC89DA /* Dog Chases Bone CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1440FCAA19D1C42800AC89DA /* DBCAView.h */,
+				1440FCAB19D1C42800AC89DA /* DBCAView.m */,
+				1440FC8419D1C25700AC89DA /* DBCAAppDelegate.h */,
+				1440FC8519D1C25700AC89DA /* DBCAAppDelegate.m */,
+				1440FC8A19D1C25700AC89DA /* DBCAViewController.h */,
+				1440FC8B19D1C25700AC89DA /* DBCAViewController.m */,
+				1440FC8D19D1C25700AC89DA /* Images.xcassets */,
+				1440FC7C19D1C25700AC89DA /* Supporting Files */,
+			);
+			path = "Dog Chases Bone CoreAnimation";
+			sourceTree = "<group>";
+		};
+		1440FC7C19D1C25700AC89DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1440FCB319D1C9D400AC89DA /* Green_Grass_Texture.jpg */,
+				1440FCAF19D1C6E600AC89DA /* boxer-dog.jpg */,
+				1440FCB019D1C6E600AC89DA /* bone.png */,
+				1440FC7D19D1C25700AC89DA /* Dog Chases Bone CoreAnimation-Info.plist */,
+				1440FC7E19D1C25700AC89DA /* InfoPlist.strings */,
+				1440FC8119D1C25700AC89DA /* main.m */,
+				1440FC8319D1C25700AC89DA /* Dog Chases Bone CoreAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1440FC9A19D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				1440FCA019D1C25700AC89DA /* Dog_Chases_Bone_CoreAnimationTests.m */,
+				1440FC9B19D1C25700AC89DA /* Supporting Files */,
+			);
+			path = "Dog Chases Bone CoreAnimationTests";
+			sourceTree = "<group>";
+		};
+		1440FC9B19D1C25700AC89DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1440FC9C19D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests-Info.plist */,
+				1440FC9D19D1C25700AC89DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1440FC7119D1C25700AC89DA /* Dog Chases Bone CoreAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1440FCA419D1C25700AC89DA /* Build configuration list for PBXNativeTarget "Dog Chases Bone CoreAnimation" */;
+			buildPhases = (
+				1440FC6E19D1C25700AC89DA /* Sources */,
+				1440FC6F19D1C25700AC89DA /* Frameworks */,
+				1440FC7019D1C25700AC89DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dog Chases Bone CoreAnimation";
+			productName = "Dog Chases Bone CoreAnimation";
+			productReference = 1440FC7219D1C25700AC89DA /* Dog Chases Bone CoreAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1440FC9219D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1440FCA719D1C25700AC89DA /* Build configuration list for PBXNativeTarget "Dog Chases Bone CoreAnimationTests" */;
+			buildPhases = (
+				1440FC8F19D1C25700AC89DA /* Sources */,
+				1440FC9019D1C25700AC89DA /* Frameworks */,
+				1440FC9119D1C25700AC89DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1440FC9919D1C25700AC89DA /* PBXTargetDependency */,
+			);
+			name = "Dog Chases Bone CoreAnimationTests";
+			productName = "Dog Chases Bone CoreAnimationTests";
+			productReference = 1440FC9319D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1440FC6A19D1C25700AC89DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DBCA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = seanreed.test;
+				TargetAttributes = {
+					1440FC9219D1C25700AC89DA = {
+						TestTargetID = 1440FC7119D1C25700AC89DA;
+					};
+				};
+			};
+			buildConfigurationList = 1440FC6D19D1C25700AC89DA /* Build configuration list for PBXProject "Dog Chases Bone CoreAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1440FC6919D1C25700AC89DA;
+			productRefGroup = 1440FC7319D1C25700AC89DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1440FC7119D1C25700AC89DA /* Dog Chases Bone CoreAnimation */,
+				1440FC9219D1C25700AC89DA /* Dog Chases Bone CoreAnimationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1440FC7019D1C25700AC89DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FC8E19D1C25700AC89DA /* Images.xcassets in Resources */,
+				1440FC8019D1C25700AC89DA /* InfoPlist.strings in Resources */,
+				1440FCB419D1C9D400AC89DA /* Green_Grass_Texture.jpg in Resources */,
+				1440FCB119D1C6E600AC89DA /* boxer-dog.jpg in Resources */,
+				1440FCB219D1C6E600AC89DA /* bone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1440FC9119D1C25700AC89DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FC9F19D1C25700AC89DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1440FC6E19D1C25700AC89DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FC8619D1C25700AC89DA /* DBCAAppDelegate.m in Sources */,
+				1440FC8219D1C25700AC89DA /* main.m in Sources */,
+				1440FCAC19D1C42800AC89DA /* DBCAView.m in Sources */,
+				1440FC8C19D1C25700AC89DA /* DBCAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1440FC8F19D1C25700AC89DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1440FCA119D1C25700AC89DA /* Dog_Chases_Bone_CoreAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1440FC9919D1C25700AC89DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1440FC7119D1C25700AC89DA /* Dog Chases Bone CoreAnimation */;
+			targetProxy = 1440FC9819D1C25700AC89DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1440FC7E19D1C25700AC89DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1440FC7F19D1C25700AC89DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1440FC9D19D1C25700AC89DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1440FC9E19D1C25700AC89DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1440FCA219D1C25700AC89DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1440FCA319D1C25700AC89DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1440FCA519D1C25700AC89DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dog Chases Bone CoreAnimation/Dog Chases Bone CoreAnimation-Prefix.pch";
+				INFOPLIST_FILE = "Dog Chases Bone CoreAnimation/Dog Chases Bone CoreAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1440FCA619D1C25700AC89DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dog Chases Bone CoreAnimation/Dog Chases Bone CoreAnimation-Prefix.pch";
+				INFOPLIST_FILE = "Dog Chases Bone CoreAnimation/Dog Chases Bone CoreAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1440FCA819D1C25700AC89DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dog Chases Bone CoreAnimation.app/Dog Chases Bone CoreAnimation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dog Chases Bone CoreAnimation/Dog Chases Bone CoreAnimation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dog Chases Bone CoreAnimationTests/Dog Chases Bone CoreAnimationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1440FCA919D1C25700AC89DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dog Chases Bone CoreAnimation.app/Dog Chases Bone CoreAnimation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dog Chases Bone CoreAnimation/Dog Chases Bone CoreAnimation-Prefix.pch";
+				INFOPLIST_FILE = "Dog Chases Bone CoreAnimationTests/Dog Chases Bone CoreAnimationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1440FC6D19D1C25700AC89DA /* Build configuration list for PBXProject "Dog Chases Bone CoreAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1440FCA219D1C25700AC89DA /* Debug */,
+				1440FCA319D1C25700AC89DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1440FCA419D1C25700AC89DA /* Build configuration list for PBXNativeTarget "Dog Chases Bone CoreAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1440FCA519D1C25700AC89DA /* Debug */,
+				1440FCA619D1C25700AC89DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1440FCA719D1C25700AC89DA /* Build configuration list for PBXNativeTarget "Dog Chases Bone CoreAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1440FCA819D1C25700AC89DA /* Debug */,
+				1440FCA919D1C25700AC89DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1440FC6A19D1C25700AC89DA /* Project object */;
+}
