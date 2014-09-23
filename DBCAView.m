@@ -10,7 +10,7 @@
 
 @implementation DBCAView
 
-- (id)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self)
@@ -27,17 +27,29 @@
         [dogLayer setZPosition:0.0];
         [dogLayer setBackgroundColor:[UIColor clearColor].CGColor];
         
-        //load dog image onto the layer
+        //load dog image onto the doglayer
         UIImage *dogLayerImage = [UIImage imageNamed:@"boxer-dog.jpg"];
-        
+        CGImageRef image = [dogLayerImage CGImage];
+        [dogLayer setContents:(__bridge id)image];
+        [dogLayer setContentsRect:CGRectMake(-0.1, -0.1, 1.2, 1.2)];
+        [dogLayer setContentsGravity:kCAGravityResizeAspect];
         
         
         //load dog layer onto the viewLayer which contains the background image
         
+        [[self layer] addSublayer:dogLayer];
+        
         // create second layer for the bone image but DON'T Load because we want the image to load when the screen is touched
         
-        //load bone Layer onto the view
+        boneLayer = [[CALayer alloc]init];
+        [boneLayer setBounds:CGRectMake(0, 0, 60, 70)];
+        [boneLayer setPosition:CGPointMake(0, 0)];
         
+        [boneLayer setBackgroundColor:[UIColor clearColor].CGColor];
+        [boneLayer setZPosition:5];
+        
+        //load bone Layer onto the view
+        [[self layer]addSublayer:boneLayer];
     }
     return self;
 }

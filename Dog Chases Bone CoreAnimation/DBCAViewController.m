@@ -15,6 +15,12 @@
 
 @implementation DBCAViewController
 
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nil bundle:nil];
+    return self;
+}
+
 - (void)loadView
 {
     CGRect frame = [[UIScreen mainScreen]bounds];

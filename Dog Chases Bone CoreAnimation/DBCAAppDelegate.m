@@ -16,7 +16,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]]; //this sets the main screen
     DBCAViewController *dogViewController = [[DBCAViewController alloc]init];
     [[self window]setRootViewController:dogViewController];
-    [self.window makeKeyAndVisible];
+    [[self window] makeKeyAndVisible];
 
     return YES;
 }
