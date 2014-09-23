@@ -22,7 +22,7 @@
         
         //create first layer for dog image
         dogLayer = [[CALayer alloc]init];
-        [dogLayer setBounds:CGRectMake(0, 0, 100, 100)];
+        [dogLayer setBounds:CGRectMake(0, 0, 70, 70)];
         [dogLayer setPosition:CGPointMake(160, 100)];
         [dogLayer setZPosition:0.0];
         [dogLayer setBackgroundColor:[UIColor clearColor].CGColor];
@@ -54,6 +54,22 @@
     return self;
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint touchPoint = [touch locationInView:self];
+    
+    CABasicAnimation *dogMovementAnimation = [CABasicAnimation animationWithKeyPath:@"position"];
+    [dogMovementAnimation setFromValue:[NSValue valueWithCGPoint:[[dogLayer presentationLayer] position]]];
+    [dogMovementAnimation setToValue:[NSValue valueWithCGPoint:touchPoint]];
+    [dogMovementAnimation setDuration:2.0];
+    
+    [dogLayer setPosition:touchPoint];
+    
+    [dogLayer addAnimation:dogMovementAnimation forKey:@"dogAnimation"];
+    
+    
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
